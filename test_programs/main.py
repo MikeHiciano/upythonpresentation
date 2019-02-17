@@ -1,5 +1,4 @@
 import blink
-import time
 
 def Blinks(veces):
     for i in range(veces):
