@@ -1,0 +1,12 @@
+first: download the firmware 
+second: install esptool.py and ampy:
+    -pip install esptool
+    -pip install adafruit-ampy
+
+third: install the firmware to the esp8266:
+    -dmesg (to see the port) , in this case is the port /dev/ttyUSB0
+    -esptool.py --port /dev/ttyUSB0 erase_flash, this comand erase the flash memory
+    -esptool.py --port /dev/ttyUSB0 --baud 460800 write_flask --flash_size=detect 0 [the name of the firmware]
+    -thats it
+
+fourth: run it!
